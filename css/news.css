@@ -1,0 +1,62 @@
+.nav-bar{
+    position: relative;
+    background-color: #63c9ca;
+    color: white;
+}
+.mui-card{
+    box-shadow: none;
+}
+.mui-icon-back:before, .mui-icon-left-nav:before{
+    color: white;
+}
+.mui-title{
+    color: #fff;
+}
+.mui-card-header{
+    color: #484848;
+    border: none;
+}
+.mui-card-header span{
+    float: left;
+}
+.mui-card-header:after, .mui-card-footer:before{
+    background-color: #fff;
+}
+.mui-card-header i img{
+    width: .78rem;
+    height: .28rem;
+}
+.mui-card-header pre{
+    float: right;
+}
+.mui-card-header pre img{
+    width: .5rem;
+    height: .5rem;
+}
+.time{
+    font-size: .24rem;
+    color: #999;
+    padding-left: .3rem;
+}
+.mui-card-content-inner{
+    color: #999;
+}
+
+.mui-card-footer{
+    border-top: 1px solid #ededed;
+    color: #767676;
+}
+.none{
+    text-align: center;
+    color: #cbcbcb;
+    font-size: .28rem;
+    margin-top: .6rem;
+}
+.el-icon-arrow-right{
+    display: inline-block;
+    width: 7px;
+    float: right;
+    height: 14px;
+    background: url(../images/arrow-right.png) no-repeat;
+    background-size: contain;
+}

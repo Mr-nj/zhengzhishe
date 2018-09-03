@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>政知社</title>
+    <link rel="stylesheet" href="sass/reset.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+	<link href="sass/mui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="sass/read.css">
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav nav-bar">
+	    <a class="mui-icon mui-icon-left-nav mui-pull-left" href="index.html"></a>
+	    <h1 class="mui-title">政知头条</h1>
+    </header>
+    <div class="main">
+        <p class="shijian"></p>
+        <div class="content">
+            <div class="items">
+                <div class="item-left">
+                    <span>08:05</span>
+                    <i></i>
+                </div>
+                <div class="item-right">
+                    <p>医药生产企业单个品种销售收入上台阶奖励政策，医药生产企业单个品种销售收入上台阶奖励政策，医药生产企业单个品种销售收入上台阶奖励政策。</p>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item-left">
+                    <span>08:08</span>
+                    <i></i>
+                </div>
+                <div class="item-right">
+                    <p>对总部新落户本省的全国医药行业百强企业奖补政策，对总部新落户本省的全国医药行业百强企业奖补政策。</p>
+                    <div class="read-more">查看全文</div>
+                    <div class="zhengce">
+                        <p>对总部新落户本省的全国医药行业百强企业奖补政策</p>
+                        <img src="images/pic.png" alt="">
+                    </div>
+                    <span>来源：**网</span>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item-left">
+                    <span>08:05</span>
+                    <i></i>
+                </div>
+                <div class="item-right">
+                    <p>医药生产企业单个品种销售收入上台阶奖励政策，医药生产企业单个品种销售收入上台阶奖励政策，医药生产企业单个品种销售收入上台阶奖励政策。</p>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item-left">
+                    <span>08:08</span>
+                    <i></i>
+                </div>
+                <div class="item-right">
+                    <p>对总部新落户本省的全国医药行业百强企业奖补政策，对总部新落户本省的全国医药行业百强企业奖补政策。</p>
+                    <div class="read-more">查看全文</div>
+                    <div class="zhengce">
+                        <p>对总部新落户本省的全国医药行业百强企业奖补政策</p>
+                        <img src="images/pic.png" alt="">
+                    </div>
+                    <span>来源：**网</span>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+    <script src="js/index.js"></script>
+    <script src="js/mui.min.js"></script>
+	<script type="text/javascript">
+        var date = new Date();
+        var year = date.getFullYear();
+        var mouth = date.getMonth();
+        var day = date.getDate();
+        var mydate=new Date();
+        var myddy=mydate.getDay();//获取存储当前日期
+        var weekday=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+        document.getElementsByClassName('shijian')[0].innerHTML = (year +'年'+mouth +'月'+ day +'日'+'&nbsp;&nbsp;' + weekday[myddy]);
+	</script>
+</body>
+</html>

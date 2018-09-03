@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>政知社</title>
+    <link rel="stylesheet" href="sass/reset.css">
+    <link rel="stylesheet" href="sass/swiper3.08.min.css">
+    <link rel="stylesheet" href="sass/index.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/flex.js"></script>
+    <script src="js/swiper3.0.8.min.js"></script>
+    <style>
+        .swiper-container{
+            margin: 0;
+        }
+        
+    </style>
+    <script>
+        window.onload = function(){
+            var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2.5,
+            spaceBetween: 15,
+            freeMode: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            });
+            var mySwiper3 = new Swiper('.gonggao-msg', {
+                autoplay: 5000,
+                direction : 'vertical',
+                slidesPerView : 2,
+                loop: true,
+                autoplayDisableOnInteraction : false,
+            });  
+            
+            var date = new Date();
+            var mouth = date.getMonth();
+            var day = date.getDate();
+            console.log(day);
+            var json = {
+                0:'一月',
+                1:'二月',
+                2:'三月',
+                3:'四月',
+                4:'五月',
+                5:'六月',
+                6:'七月',
+                7:'八月',
+                8:'九月',
+                9:'十月',
+                10:'十一月',
+                11:'十二月'
+            };
+            var dateDay = document.getElementsByClassName('day')[0];
+            var dateMouth = document.getElementsByClassName('mouth')[0];
+            mouth = json[mouth];
+            dateDay.innerHTML = day;
+            dateMouth.innerHTML = mouth;
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="head">
+        <div class="search"><span></span>
+            <div class="map"><span>合肥</span></div>
+            <div class="search-inp">
+                <a href="search.html">
+                <input type="text" class="inp" placeholder="热点搜索"></a>
+            </div>
+            <a href="news.html">
+                <div class="news"><span>5</span></div>
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="top">
+            <div class="top-content">
+                <div class="top-content-title">
+                    <p>政知头条<span>每日最新排行榜</span></p>
+                    <div class="data">
+                        <span class="mouth"></span>
+                        <span class="day"></span>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <ul class="top-content-info">
+                    <a href="#"><li><span class="top1"></span><p>医药生产企业单个品种销售收入上台阶奖励政策</p></li></a>
+                    <a href="#"><li><span class="top2"></span><p>对总部新落户本省的全国医药行业百强企业奖补政策</p></li></a>
+                    <a href="#"><li><span class="top3"></span><p>本省道地药材标准的研究经费补贴政策</p></li></a>
+                    <a href="#"><li><div class="i"></div><p>国家级创新型（试点）企业、国家知识产权优势企业奖励政策</p></li></a>
+                    <a href="#"><li><div class="i"></div><p>国家级创新型（试点）企业、国家知识产权优势企业奖励政策</p></li></a>
+                </ul>
+                <div class="clearfix"></div>
+                <a href="read.html"><div class="more">更多热点信息</div></a>
+            </div>
+        </div>
+        <div class="sev">
+            <a href="">
+                <img src="images/sev-icon1.png" alt="">
+                <span>政策法规</span>
+            </a> 
+            <a href="unscramble.html">
+                <img src="images/sev-icon2.png" alt="">
+                <span>政策解读</span>
+            </a>
+            <a href="company.html">
+                <img src="images/sev-icon3.png" alt="">
+                <span>企业信息</span>
+            </a>
+            <a href="">
+                <img src="images/sev-icon4.png" alt="">
+                <span>融资服务</span>
+            </a>
+            <a href="">
+                <img src="images/sev-icon5.png" alt="">
+                <span>项目申报</span>
+            </a>
+            <a href="">
+                <img src="images/sev-icon6.png" alt="">
+                <span>人才服务</span>
+            </a>
+            <a href="news.html">
+                <img src="images/sev-icon7.png" alt="">
+                <span>通知公告</span>
+            </a>
+            <a href="">
+                <img src="images/sev-icon8.png" alt="">
+                <span>企业培训</span>
+            </a>
+            <a href="">
+                <img src="images/sev-icon9.png" alt="">
+                <span>更多</span>
+            </a>
+        </div>
+        <div class="gonggao">
+            <img src="images/icon-gonggao.png" alt="">
+            <div class="gonggao-msg swiper-container-vertical">
+                <div class="swiper-wrapper">
+                    <a href="news.html" class="swiper-slide"><p>【升级】8月14日政知社系统升级通知</p></a>
+                    <a href="news.html" class="swiper-slide"><p>【升级】8月14日政知社系统升级通知</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="pro">
+            <a href="#">
+                <div class="title">
+                    <p>服务产品<span>甄选优质服务商</span></p>
+                    <img src="images/Arrow_340px_1183600_easyicon.net.png" alt="">
+                </div>
+            </a>
+            <div class="pro-info">
+                <a href='#' class="pro-info-item">
+                    <img src="images/pro-icon1.png" alt="">
+                    <p>发布请求</p>
+                    <span>1分钟轻松...</span>
+                </a>
+                <a href='#' class="pro-info-item">
+                    <img src="images/pro-icon2.png" alt="">
+                    <p>项目大厅</p>
+                    <span>八大集市全...</span>
+                </a>
+                <a href='#' class="pro-info-item">
+                    <img src="images/pro-icon3.png" alt="">
+                    <p>服务介绍</p>
+                    <span>免费项目保...</span>
+                </a>
+            </div>
+        </div>
+        <div class="jinrong">
+            <a href="#">
+                <div class="title">
+                    <p>金融产品<span>技术领先、安全、稳定</span></p>
+                    <img src="images/Arrow_340px_1183600_easyicon.net.png" alt="">
+                </div>
+            </a>
+            <div class="jinrong-content swiper-container swiper-container-horizontal swiper-container-free-mode swiper-container-ios" >
+                <div class="jinrong-info swiper-wrapper">
+                    <a class="jinrong-item swiper-slide swiper-slide-active" style="width: 3.2rem">
+                        <img src="images/final-pro1.png" alt="">
+                        <p>软件外包服务</p>
+                        <span>优质服务</span>
+                    </a>
+                    <a class="jinrong-item swiper-slide">
+                        <img src="images/final-pro2.png" alt="">
+                        <p>系统集成服务</p>
+                        <span>优质服务</span>
+                    </a>
+                    <a class="jinrong-item swiper-slide">
+                        <img src="images/final-pro3.png" alt="">
+                        <p>人才猎聘</p>
+                        <span>优质服务</span>
+                    </a>
+                    <a class="jinrong-item swiper-slide">
+                        <img src="images/final-pro1.png" alt="">
+                        <p>软件外包服务</p>
+                        <span>优质服务</span>
+                    </a>
+                    <a class="jinrong-item swiper-slide">
+                        <img src="images/final-pro2.png" alt="">
+                        <p>系统集成服务</p>
+                        <span>优质服务</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="gonggao">
+            <img src="images/icon-product.png" alt="" class="chanping">
+            <div class="gonggao-msg swiper-container-vertical">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide"><p>【升级】8月14日政知社系统升级通知</p></a>
+                    <a href="#" class="swiper-slide"><p>【升级】8月14日政知社系统升级通知</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="hot-intro">
+            <a href="#">
+                <div class="title hot-title">
+                    <p>热门推荐</p>
+                    <span>更多
+                        <img src="images/Arrow_340px_1183600_easyicon.net.png" alt="">
+                    </span>
+                </div>
+            </a>
+            <ul class="hot-msg">
+                <a href="#">
+                    <li class="hot-msg-item">
+                        <p>关于2018年安徽省绿色建筑及装配式建筑专项资金项目名单的公示</p>
+                        <div class="xiangmu">
+                            <div class="left">
+                                <span class="xiangmu"></span>
+                                <span class="nongye"></span>
+                            </div>
+                            <span><i class="biao"><span></i>2018-8-14</span></span>
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="hot-msg-item">
+                        <p>合肥市关于做好安徽省创新争先奖申报推荐工作的通知</p>
+                        <div class="xiangmu">
+                            <div class="left">
+                                <span class="xiangmu"></span>
+                                <span class="jianting"></span>
+                            </div>
+                            <span><i class="biao"></i><span>2018-8-14</span></span>
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="hot-msg-item">
+                        <p>关于2018年安徽省绿色建筑及装配式建筑专项资金项目名单的公示</p>
+                        <div class="xiangmu">
+                            <div class="left">
+                                <span class="xiangmu"></span>
+                                <span class="nongye"></span>
+                            </div>
+                            <span><i class="biao"><span></i>2018-8-14</span></span>
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="hot-msg-item">
+                        <p>合肥市关于做好安徽省创新争先奖申报推荐工作的通知</p>
+                        <div class="xiangmu">
+                            <div class="left">
+                                <span class="xiangmu"></span>
+                                <span class="jianting"></span>
+                            </div>
+                            <span><i class="biao"></i><span>2018-8-14</span></span>
+                        </div>
+                    </li>
+                </a>
+            </ul>
+            <a href="#"><div class="more clear-border-top">更多热点信息</div></a>
+        </div>
+    </div>
+    <div class="border"></div>
+        <div class="ai">
+            <div class="ai-info">
+                <p>人工智能</p>
+                <img src="images/ai.png" alt="">
+            </div>
+        </div>
+        <!-- 人工智能 结束 -->    
+    </div>
+    <!-- 政知社 开始     -->
+    <div class="zzs">
+        <img src="images/logo.png" alt="">
+        <div class="zzs-right">
+            <p>安徽中小企业政策服务平台</p>
+            <p>企业项目申报服务商</p>
+        </div>
+    </div>
+    <!-- 政知社 结束 -->
+    <div class="footer">
+        <a href="#">
+            <img src="images/home2.png" alt="">
+            <p class="color">首页</p>
+        </a>
+        <a href="company.html">
+            <img src="images/qiye.png" alt="">
+            <p>企业</p>
+        </a>
+        <a href="#">
+            <img src="images/sev.png" alt="">
+            <p>服务</p>
+        </a>
+        <a href="#">
+            <img src="images/fond.png" alt="">
+            <p>发现</p>
+        </a>
+        <a href="user.html">
+            <img src="images/user.png" alt="">
+            <p>我</p>
+        </a>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/mui.min.js"></script>
+    
+</body>
+</html>
