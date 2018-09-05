@@ -1,0 +1,176 @@
+$('.quyu').click(function(){
+    if($('.quyu').hasClass('more-nav-items-active')){
+        $('.more-nav-bottom1').removeClass('more-nav-bottom-avtive');
+        $('.more-nav-bottom2').removeClass('more-nav-bottom-avtive');
+        $('.more-nav-bottom3').removeClass('more-nav-bottom-avtive');
+        $('.more-nav-bottom4').removeClass('more-nav-bottom-avtive');
+        $('.quyu').removeClass('more-nav-items-active');
+        $('.hangye').removeClass('more-nav-items-active');
+        $('.fuwu').removeClass('more-nav-items-active');
+        $('.select').removeClass('more-nav-items-active');
+        $('.neirong1').hide();
+        $('.neirong2').hide();
+        $('.neirong3').hide();
+        $('.neirong4').hide();
+        $('.smak').hide();
+        $('.hot-msg').show();
+    }else{
+    $('.more-nav-bottom1').addClass('more-nav-bottom-avtive');
+    $('.more-nav-bottom2').removeClass('more-nav-bottom-avtive');
+    $('.more-nav-bottom3').removeClass('more-nav-bottom-avtive');
+    $('.more-nav-bottom4').removeClass('more-nav-bottom-avtive');
+    $('.quyu').addClass('more-nav-items-active');
+    $('.hangye').removeClass('more-nav-items-active');
+    $('.fuwu').removeClass('more-nav-items-active');
+    $('.select').removeClass('more-nav-items-active');
+    $('.neirong1').show();
+    $('.neirong2').hide();
+    $('.neirong3').hide();
+    $('.neirong4').hide();
+    $('.smak').show();
+    $('.hot-msg').hide();}
+});
+$('.hangye').click(function(){
+    if($('.hangye').hasClass('more-nav-items-active')){
+        $('.more-nav-bottom1').removeClass('more-nav-bottom-avtive');
+        $('.more-nav-bottom2').removeClass('more-nav-bottom-avtive');
+        $('.more-nav-bottom3').removeClass('more-nav-bottom-avtive');
+        $('.more-nav-bottom4').removeClass('more-nav-bottom-avtive');
+        $('.quyu').removeClass('more-nav-items-active');
+        $('.hangye').removeClass('more-nav-items-active');
+        $('.fuwu').removeClass('more-nav-items-active');
+        $('.select').removeClass('more-nav-items-active');
+        $('.neirong1').hide();
+        $('.neirong2').hide();
+        $('.neirong3').hide();
+        $('.neirong4').hide();
+        $('.smak').hide();
+        $('.hot-msg').show();
+    }else{
+    $('.more-nav-bottom3').addClass('more-nav-bottom-avtive');
+    $('.more-nav-bottom2').removeClass('more-nav-bottom-avtive');
+    $('.more-nav-bottom1').removeClass('more-nav-bottom-avtive');
+    $('.more-nav-bottom4').removeClass('more-nav-bottom-avtive');
+    $('.hangye').addClass('more-nav-items-active');
+    $('.fuwu').removeClass('more-nav-items-active');
+    $('.quyu').removeClass('more-nav-items-active');
+    $('.select').removeClass('more-nav-items-active');
+    $('.neirong3').show();
+    $('.neirong2').hide();
+    $('.neirong1').hide();
+    $('.neirong4').hide();
+    $('.smak').show();
+    $('.hot-msg').show();}
+});
+$('.fuwu').click(function(){
+    if($('.fuwu').hasClass('more-nav-items-active')){
+        $('.more-nav-bottom1').removeClass('more-nav-bottom-avtive');
+        $('.more-nav-bottom2').removeClass('more-nav-bottom-avtive');
+        $('.more-nav-bottom3').removeClass('more-nav-bottom-avtive');
+        $('.more-nav-bottom4').removeClass('more-nav-bottom-avtive');
+        $('.quyu').removeClass('more-nav-items-active');
+        $('.hangye').removeClass('more-nav-items-active');
+        $('.fuwu').removeClass('more-nav-items-active');
+        $('.select').removeClass('more-nav-items-active');
+        $('.neirong1').hide();
+        $('.neirong2').hide();
+        $('.neirong3').hide();
+        $('.neirong4').hide();
+        $('.smak').hide();
+        $('.hot-msg').show();
+    }else{
+    $('.more-nav-bottom2').addClass('more-nav-bottom-avtive');
+    $('.more-nav-bottom3').removeClass('more-nav-bottom-avtive');
+    $('.more-nav-bottom1').removeClass('more-nav-bottom-avtive');
+    $('.more-nav-bottom4').removeClass('more-nav-bottom-avtive');
+    $('.fuwu').addClass('more-nav-items-active');
+    $('.quyu').removeClass('more-nav-items-active');
+    $('.hangye').removeClass('more-nav-items-active');
+    $('.select').removeClass('more-nav-items-active');
+    $('.neirong1').hide();
+    $('.neirong2').show();
+    $('.neirong3').hide();
+    $('.neirong4').hide();
+    $('.smak').show();
+    $('.hot-msg').show();}
+});
+$('.select').click(function(){
+    if($('.select').hasClass('more-nav-items-active')){
+        $('.more-nav-bottom1').removeClass('more-nav-bottom-avtive');
+        $('.more-nav-bottom2').removeClass('more-nav-bottom-avtive');
+        $('.more-nav-bottom3').removeClass('more-nav-bottom-avtive');
+        $('.more-nav-bottom4').removeClass('more-nav-bottom-avtive');
+        $('.quyu').removeClass('more-nav-items-active');
+        $('.hangye').removeClass('more-nav-items-active');
+        $('.fuwu').removeClass('more-nav-items-active');
+        $('.select').removeClass('more-nav-items-active');
+        $('.neirong1').hide();
+        $('.neirong2').hide();
+        $('.neirong3').hide();
+        $('.neirong4').hide();
+        $('.smak').hide();
+        $('.hot-msg').show();
+    }else{
+    $('.fuwu').removeClass('more-nav-items-active');
+    $('.more-nav-bottom4').addClass('more-nav-bottom-avtive');
+    $('.more-nav-bottom1').removeClass('more-nav-bottom-avtive');
+    $('.more-nav-bottom2').removeClass('more-nav-bottom-avtive');
+    $('.more-nav-bottom3').removeClass('more-nav-bottom-avtive');
+    $('.hangye').removeClass('more-nav-items-active');
+    $('.select').addClass('more-nav-items-active');
+    $('.neirong1').hide();
+    $('.neirong2').hide();
+    $('.neirong3').hide();
+    $('.neirong4').show();
+    $('.hot-msg').show();
+    $('.smak').show();}
+});
+$('.smak').click(function(e){
+    $('.more-nav-bottom4').removeClass('more-nav-bottom-avtive');
+    $('.more-nav-bottom3').removeClass('more-nav-bottom-avtive');
+    $('.more-nav-bottom1').removeClass('more-nav-bottom-avtive');
+    $('.more-nav-bottom2').removeClass('more-nav-bottom-avtive');
+    $('.quyu').removeClass('more-nav-items-active');
+    $('.fuwu').removeClass('more-nav-items-active');
+    $('.hangye').removeClass('more-nav-items-active');
+    $('.select').removeClass('more-nav-items-active');
+    $('.neirong1').hide();
+    $('.neirong2').hide();
+    $('.neirong3').hide();
+    $('.neirong4').hide();
+    $('.hot-msg').show();
+    $('.smak').hide();
+})
+$('.click1 span').click(function(){
+    if($('.click1 p').hasClass('active')){
+        return false;
+    }else{
+        $(this).toggleClass('active');
+    }
+});
+$('.click1 p').click(function(){
+    $(this).toggleClass('active').siblings().removeClass('active');
+    $('.click1 span').toggleClass('addClass')
+})
+$('.click2 span').click(function(){
+    if($('.click2 p').hasClass('active')){
+        return false;
+    }else{
+        $(this).toggleClass('active');
+    }
+});
+$('.click2 p').click(function(){
+    $(this).toggleClass('active').siblings().removeClass('active');
+    $('.click2 span').toggleClass('addClass')
+})
+$('.click3 span').click(function(){
+    if($('.click3 p').hasClass('active')){
+        return false;
+    }else{
+        $(this).toggleClass('active');
+    }
+});
+$('.click3 p').click(function(){
+    $(this).toggleClass('active').siblings().removeClass('active');
+    $('.click3 span').toggleClass('addClass')
+}) 
