@@ -6,7 +6,6 @@ html {
 
 body {
   background-color: #f5f5f5;
-  padding-bottom: 1px;
 }
 
 a {
@@ -50,7 +49,7 @@ a {
 }
 
 .more-nav-items {
-  width: 2.48rem;
+  width: 3.30667rem;
   height: 38px;
   color: #767676;
   font-size: 14px;
@@ -80,31 +79,109 @@ a {
 }
 
 .more-nav-bottom1 {
-  width: 2.48rem;
+  width: 3.30667rem;
   height: 1px;
   background: #f5f5f5;
 }
 
 .more-nav-bottom2 {
-  width: 2.48rem;
+  width: 3.30667rem;
   height: 1px;
   background: #f5f5f5;
 }
 
 .more-nav-bottom3 {
-  width: 2.48rem;
-  height: 1px;
-  background: #f5f5f5;
-}
-
-.more-nav-bottom4 {
-  width: 2.48rem;
+  width: 3.30667rem;
   height: 1px;
   background: #f5f5f5;
 }
 
 .more-nav-bottom-avtive {
   background: #fff;
+}
+
+.main {
+  margin-top: 83px;
+  width: 100%;
+}
+
+.main .main-left {
+  float: left;
+  position: fixed;
+  top: 83px;
+  margin-top: 0;
+}
+
+.main .main-left span {
+  display: block;
+  width: 2.66667rem;
+  padding: 16px 8px;
+  font-size: 16px;
+  color: #767676;
+  text-align: center;
+}
+
+.main .main-left span.active {
+  background-color: #fff;
+}
+
+.main .main-right {
+  width: 7.33333rem;
+  float: right;
+  background-color: #fff;
+}
+
+.main .main-right ul {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main .main-right ul a {
+  color: #484848;
+}
+
+.main .main-right ul a li {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.main .main-right ul a li p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.main .main-right ul a li > div {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .main-right ul a li > div > span:nth-child(1) {
+  display: flex;
+  color: #a4a4a4;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .main-right ul a li > div > span:nth-child(1) i {
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  background: url(../images/clock.png) no-repeat center center;
+  background-size: contain;
+}
+
+.main .main-right ul a li > div > span:nth-child(2) {
+  width: 60px;
+  height: 18px;
+  border: 1px solid #29cccc;
+  color: #29cccc;
+  text-align: center;
+  line-height: 18px;
 }
 
 .smak {
@@ -120,81 +197,6 @@ a {
 
 .clear {
   height: 1px;
-}
-
-.hot-msg {
-  margin-top: 83px;
-  background: #fff;
-}
-
-.hot-msg .hot-msg-item {
-  padding-left: 28px;
-  padding-right: 28px;
-  margin-top: 12px;
-  border-bottom: 1px solid #ededed;
-}
-
-.hot-msg .hot-msg-item p {
-  font-size: 14px;
-  color: #484848;
-  margin-bottom: 0;
-  line-height: 1;
-}
-
-.hot-msg .hot-msg-item .xiangmu {
-  height: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hot-msg .hot-msg-item .xiangmu .left {
-  display: flex;
-  align-items: center;
-}
-
-.hot-msg .hot-msg-item .xiangmu .left span {
-  height: 16px;
-  text-align: center;
-}
-
-.hot-msg .hot-msg-item .xiangmu .left .xiangmu {
-  width: 1.49333rem;
-  background: url(../images/xiangmu.png) no-repeat center center;
-  background-size: contain;
-  margin-right: 0.32rem;
-}
-
-.hot-msg .hot-msg-item .xiangmu .left .jianting {
-  width: 2.13333rem;
-  background: url(../images/jianting.png) no-repeat center center;
-  background-size: contain;
-}
-
-.hot-msg .hot-msg-item .xiangmu .left .nongye {
-  width: 2.13333rem;
-  background: url(../images/nongye.png) no-repeat center center;
-  background-size: contain;
-}
-
-.hot-msg .hot-msg-item .xiangmu > span {
-  height: 16px;
-  color: #a4a4a4;
-  text-align: center;
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  font-size: 10px;
-  line-height: 16px;
-}
-
-.hot-msg .hot-msg-item .xiangmu > span i {
-  display: inline-block;
-  width: 0.32rem;
-  height: 12px;
-  background: url(../images/clock.png);
-  background-size: contain;
-  margin-right: 0.13333rem;
 }
 
 .neirong1 {

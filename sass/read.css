@@ -6,7 +6,6 @@ html {
 
 body {
   background: #f5f5f5;
-  overflow: hidden;
 }
 
 .nav-bar {
@@ -26,14 +25,17 @@ body {
 
 .main {
   padding: 0 16px;
-  padding-top: 61px;
+  padding-top: 60px;
   background-color: #fff;
+  overflow: auto;
 }
 
 .main .shijian {
   font-size: 16px;
   font-weight: 700;
   color: #484848;
+  margin-bottom: 20px;
+  line-height: 1;
 }
 
 .main .content .items {
@@ -61,9 +63,14 @@ body {
   background: #aaaaaa;
 }
 
+.main .content .items .item-right {
+  padding-bottom: 30px;
+}
+
 .main .content .items .item-right p {
   font-size: 16px;
   color: #464646;
+  margin-bottom: 0;
   width: 7.86667rem;
 }
 
@@ -73,6 +80,8 @@ body {
   background-size: 9.5px 11.5px;
   color: #bbbbbb;
   font-size: 12px;
+  margin-top: 12px;
+  line-height: 1;
 }
 
 .main .content .items .item-right .zhengce {
@@ -101,4 +110,13 @@ body {
   font-size: 12px;
   color: #bbbbbb;
   float: right;
+  line-height: 1;
+}
+
+.main .content > div:last-child {
+  margin-bottom: 30px;
+}
+
+.main .content > div:last-child .item-right {
+  padding-bottom: 0;
 }

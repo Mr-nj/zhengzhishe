@@ -22,7 +22,9 @@ img{
     content: '';
     zoom: 1;
 }
-
+p{
+    margin-bottom: 0;
+}
 .clearfix:after,.clearfix:before {
     display: table;
     content: "";
