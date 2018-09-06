@@ -133,3 +133,4 @@ $('.click3 p').click(function(){
     $(this).toggleClass('active').siblings().removeClass('active');
     $('.click3 span').toggleClass('addClass')
 });
+

@@ -51,8 +51,8 @@
                         <span class="">现代医疗</span>
                     </div>
                 </div>
-                <div class="main-right">
-                    <ul>
+                <div class="main-right mui-scroll-wrapper">
+                    <ul class="mui-scroll">
                         <a href="">
                             <li>
                                 <p>关于2018年安徽省绿色建筑及装配式建筑专项资金项目名单的公示</p>
@@ -189,6 +189,7 @@
         var height = $(window).height()-83;
         $(function(){
             $('.main-left').css('height',height+'px')
+            $('.main-right').css('height',height+'px')
         });
         mui('.mui-scroll-wrapper').scroll({
             deceleration: 0.001, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006

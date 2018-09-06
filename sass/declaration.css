@@ -103,12 +103,11 @@ a {
 .main {
   margin-top: 83px;
   width: 100%;
+  position: relative;
 }
 
 .main .main-left {
   float: left;
-  position: fixed;
-  top: 83px;
   margin-top: 0;
 }
 
@@ -125,9 +124,15 @@ a {
   background-color: #fff;
 }
 
+.main .main-left.mui-scroll-wrapper {
+  width: 100px;
+}
+
 .main .main-right {
   width: 7.33333rem;
   float: right;
+  right: 0;
+  left: 100px;
   background-color: #fff;
 }
 

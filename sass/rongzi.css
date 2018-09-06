@@ -403,6 +403,10 @@ a {
   margin-left: 16px;
 }
 
+.buxian span:nth-child(4) {
+  margin-left: 16px;
+}
+
 .buxian p {
   width: 2.66667rem;
   height: 36px;

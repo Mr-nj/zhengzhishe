@@ -25,7 +25,7 @@
         <div class="mui-slider">
             <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
                 <a class="mui-control-item mui-active" href="#item1"><span>金融产品</span></a>
-                <a class="mui-control-item" href="#item2"><span>金融机构</span></a>
+                <a class="mui-control-item" href="#item2" id="jinrongjigou"><span>金融机构</span></a>
             </div>
             <div class="mui-slider-group">
                 <div id="item1" class="mui-slider-item mui-control-content mui-active">
@@ -217,13 +217,13 @@
         <span>银行</span>
         <span>小贷公司</span>
         <span>典当行</span>
-        <span>其他</span>
+        <span style="margin-left:16px;">其他</span>
         <p>全部</p>
     </div>
     <div class="clearfix"></div>
 </div>
     <div class="neirong2 neirong">
-        <div class="buxian1 click1">
+        <div class="buxian1 click2">
             <span>分期还款</span>
             <span>到期还款</span>
             <span>随借随还</span>
@@ -231,7 +231,7 @@
         </div>
     </div>
     <div class="neirong3 neirong">
-        <div class="buxian1 click2">
+        <div class="buxian1 click3">
             <span>房屋抵押</span>
             <span>车辆抵押</span>
             <span>其他抵押物</span>
@@ -241,7 +241,8 @@
             <p>全部</p>
         </div>
     </div>
-
+    <style>
+    </style>
     <script src="js/index.js"></script>
     <script src="js/mui.min.js"></script>
     <script src="js/rongzi.js"></script>
@@ -255,6 +256,20 @@
             deceleration: 0.001, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
             indicators: false,
         });
-	</script>
+        mui(".mui-slider-indicator").on('tap','#jinrongjigou',function(){
+            $('.quyu').removeClass('more-nav-items-active');
+            $('.more-nav-bottom3').removeClass('more-nav-bottom-avtive');
+            $('.more-nav-bottom1').removeClass('more-nav-bottom-avtive');
+            $('.more-nav-bottom2').removeClass('more-nav-bottom-avtive');
+            $('.bumen').removeClass('more-nav-items-active');
+            $('.hangye').removeClass('more-nav-items-active');
+            $('.neirong1').hide();
+            $('.neirong2').hide();
+            $('.neirong3').hide();
+            $('.smak').hide();
+        }) 
+    </script>
+    <script>
+    </script>
 </body>
 </html>
