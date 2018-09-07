@@ -481,14 +481,16 @@ a{
     background: #fff;
     position: fixed;
     left: 0;
+    box-sizing: border-box;
     bottom: 0;
+    -webkit-transform: translateZ(0);
     z-index: 666;
     border-top: 1px solid #ededed;
     display: flex;
-    justify-content: center;
     a{
         width: 20%;
         display: flex;
+        height: 50px;
         justify-content: flex-start;
         align-items: center;
         flex-flow: column;
@@ -500,6 +502,8 @@ a{
         p{
             font-size: 10px;
             margin-top: 4px;
+            margin-bottom: 0;
+            line-height: 1;
             color: rgb(72,72,72);
         }
         .color{

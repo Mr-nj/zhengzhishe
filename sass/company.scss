@@ -10,8 +10,8 @@ html{
     font-family: 'microsoft yahei';
 }
 body{
+    
     background-color: #f5f5f5;
-    padding-bottom: 1px;
 }
 a{
     color:rgb(72,72,72);
@@ -353,17 +353,19 @@ a{
 .footer{
     width: 100%;
     height: 50px;
+    box-sizing: border-box;
     background: #fff;
     position: fixed;
     left: 0;
     bottom: 0;
-    z-index: 666;
+    -webkit-transform: translateZ(0);
+    z-index: 666;background-attachment:fixed;
     border-top: 1px solid #ededed;
     display: flex;
-    justify-content: center;
     a{
         width: 20%;
         display: flex;
+        height: 50px;
         justify-content: flex-start;
         align-items: center;
         flex-flow: column;
@@ -374,7 +376,9 @@ a{
         }
         p{
             font-size: 10px;
+            margin-bottom: 0;
             margin-top: 4px;
+            line-height: 1;
             color: rgb(72,72,72);
         }
         .color{

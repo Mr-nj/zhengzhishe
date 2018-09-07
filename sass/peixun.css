@@ -1,0 +1,196 @@
+@charset "UTF-8";
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'microsoft yahei';
+}
+
+body {
+  background-color: #f5f5f5;
+  padding-bottom: 1px;
+}
+
+a {
+  color: #484848;
+}
+
+.nav-bar {
+  position: relative;
+  background-color: #63c9ca;
+  color: white;
+  box-shadow: none;
+}
+
+.mui-bar-nav {
+  box-shadow: none;
+}
+
+.mui-title {
+  color: #fff;
+}
+
+.nav-inp {
+  display: none;
+  width: 7.17333rem !important;
+  height: 32px !important;
+  border: 1px solid #c8c8c8;
+  box-sizing: border-box;
+  margin-top: 6px;
+  font-size: 14px;
+  color: #767676;
+  margin-left: 0.42667rem;
+  margin-bottom: 0 !important;
+  padding-left: 39px !important;
+  background: url(../images/icon-seach.png) no-repeat 16px center;
+  background-size: 15px;
+}
+
+.quxiao {
+  font-size: 16px !important;
+  height: 44px;
+  display: none;
+  color: #fff;
+  text-align: center;
+  line-height: 24px;
+}
+
+.search-btn::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  margin-right: 6px;
+  background: url(../images/icon-search-white.png) no-repeat center center;
+  background-size: 15px;
+}
+
+.bgc {
+  z-index: 999;
+  background-color: #63c9ca;
+}
+
+.mui-icon-back:before, .mui-icon-left-nav:before {
+  color: #fff;
+}
+
+.class-lists {
+  padding: 0 16px;
+  padding-top: 44px;
+  background: #fff;
+  padding-bottom: 19px;
+  width: 100%;
+}
+
+.class-lists .class-list {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  margin-top: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.class-lists .class-list img {
+  width: auto;
+  height: 80px;
+}
+
+.class-lists .class-list .class-list-info {
+  width: 5.52rem;
+  height: 80px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.class-lists .class-list .class-list-info > p {
+  width: 100%;
+  font-size: 16px;
+  color: #484848;
+  margin-bottom: 16px;
+}
+
+.class-lists .class-list .class-list-info .jiage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.class-lists .class-list .class-list-info .jiage span {
+  color: #fa5050;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.class-lists .class-list .class-list-info .jiage span::before {
+  content: '￥';
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1;
+  color: #fa5050;
+}
+
+.class-lists .class-list .class-list-info .jiage button {
+  width: 80px;
+  padding: 0;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+  background: #29cccc;
+  border: none;
+}
+
+.jingxuan {
+  width: 100%;
+  height: 137px;
+  padding: 0 16px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.jingxuan .title {
+  display: flex;
+  font-size: 16px;
+  color: #484848;
+  padding: 9px 0;
+  margin: 0;
+  align-items: center;
+}
+
+.jingxuan .title i {
+  display: inline-block;
+  width: 3px;
+  height: 18px;
+  margin-right: 8px;
+  background-color: #29cccc;
+}
+
+.jingxuan .swiper-container {
+  width: 100%;
+  height: 84px;
+  margin: 0;
+}
+
+.jingxuan .swiper-container .swiper-wrapper .swiper-slide {
+  width: 140px;
+  height: 84px;
+  color: white;
+  text-align: center;
+  line-height: 84px;
+}
+
+.jingxuan .swiper-container .swiper-wrapper .slide1 {
+  background: url(../images/class-bg1.png);
+  background-size: contain;
+}
+
+.jingxuan .swiper-container .swiper-wrapper .slide2 {
+  background: url(../images/class-bg2.png);
+  background-size: contain;
+}
+
+.jingxuan .swiper-container .swiper-wrapper .slide3 {
+  background: url(../images/class-bg3.png);
+  background-size: contain;
+}

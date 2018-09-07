@@ -1,0 +1,177 @@
+@charset "utf-8";
+// 定义函数
+@function px2rem($px){
+    $rem:37.5px;
+    @return ($px / $rem) + rem;
+}
+html{
+    width: 100%;
+    height: 100%;
+    font-family: 'microsoft yahei';
+}
+body{
+    background-color: #f5f5f5;
+    padding-bottom: 1px;
+}
+a{
+    color:rgb(72,72,72);
+}
+.nav-bar{
+    position: relative;
+    background-color: #63c9ca;
+    color: white;
+    box-shadow: none;
+}
+.mui-bar-nav{
+    box-shadow: none;
+}
+.mui-title{
+    color: #fff;
+}
+.nav-inp{
+    display: none;
+    width: px2rem(269px)!important;
+    height: 32px !important;
+    border: 1px solid #c8c8c8;
+    box-sizing: border-box;
+    margin-top: 6px;
+    font-size: 14px;
+    color: #767676;
+    margin-left: px2rem(16px);
+    margin-bottom: 0 !important;
+    padding-left: 39px !important;
+    background: url(../images/icon-seach.png) no-repeat 16px center;
+    background-size: 15px;
+}
+.quxiao{
+    font-size: 16px !important;
+    height: 44px;
+    display: none;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+}
+.search-btn::before{
+    content:'';
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    margin-right: 6px;
+    background: url(../images/icon-search-white.png) no-repeat center center;
+    background-size:15px;
+}
+.bgc{
+    z-index: 999;
+    background-color: #63c9ca;
+}
+
+.mui-icon-back:before, .mui-icon-left-nav:before{
+    color: #fff;
+}
+.class-lists{
+    padding: 0 16px;
+    padding-top: 44px;
+    background: #fff;
+    padding-bottom: 19px;
+    width: 100%;
+    .class-list{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        margin-top: 12px;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: auto;
+            height: 80px;
+        }
+        .class-list-info{
+            width: px2rem(207px);
+            height: 80px;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            >p{
+                width: 100%;
+                font-size: 16px;
+                color: #484848;
+                margin-bottom: 16px;
+            }
+            .jiage{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span{
+                    color: #fa5050;
+                    font-size: 20px;
+                    line-height: 1;
+                    &::before{
+                        content: '￥';
+                        display: inline-block;
+                        font-size: 20px;
+                        line-height: 1;
+                        color: #fa5050;
+                    }
+                }
+                button{
+                    width: 80px;
+                    padding: 0;
+                    height: 24px;
+                    text-align: center;
+                    line-height: 24px;
+                    color: #fff;
+                    background: #29cccc;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.jingxuan{
+    width: 100%;
+    height: 137px;
+    padding: 0 16px;;
+    margin-top: 10px;
+    background-color: #fff;
+    .title{
+        display: flex;
+        font-size: 16px;
+        color: #484848;
+        padding: 9px 0;
+        margin: 0;
+        align-items: center;
+        i{
+            display: inline-block;
+            width: 3px;
+            height: 18px;
+            margin-right: 8px;
+            background-color: #29cccc;
+        }
+    }
+    .swiper-container{
+        width: 100%;
+        height: 84px;
+        margin: 0;
+        .swiper-wrapper{
+            .swiper-slide{
+                width: 140px;
+                height: 84px;
+                color: white;
+                text-align: center;
+                line-height: 84px;
+            }
+            .slide1{
+                background: url(../images/class-bg1.png);
+                background-size: contain;
+            }.slide2{
+                background: url(../images/class-bg2.png);
+                background-size: contain;
+            }.slide3{
+                background: url(../images/class-bg3.png);
+                background-size: contain;
+            }
+        }
+    }
+}
+

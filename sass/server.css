@@ -1,0 +1,316 @@
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'microsoft yahei';
+}
+
+body {
+  background: #f5f5f5;
+}
+
+.nav-bar {
+  background-color: #63c9ca;
+  color: white;
+  box-shadow: none;
+}
+
+.mui-title {
+  color: #fff;
+}
+
+.mui-icon-back:before, .mui-icon-left-nav:before {
+  color: white;
+}
+
+.bgc {
+  box-shadow: none;
+  z-index: 999;
+  position: relative;
+  background-color: #63c9ca;
+}
+
+.mui-table-view:before {
+  height: 0;
+}
+
+.mui-table-view:after {
+  height: 0;
+}
+
+.mui-scroll-wrapper {
+  position: static;
+}
+
+.mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after {
+  color: #767676;
+  left: 80px;
+}
+
+.mui-table-view-cell > a:not(.mui-btn) {
+  margin: 0;
+}
+
+.mui-table-view-cell.mui-collapse .mui-collapse-content {
+  margin: 0;
+  text-align: center;
+}
+
+.main .main-left .mui-table-view .mui-table-view-cell .mui-collapse-content p {
+  height: 48px !important;
+  line-height: 48px;
+  color: #999 !important;
+  font-size: 16px;
+}
+
+.mui-table-view-cell:after {
+  height: 0;
+}
+
+.mui-table-view {
+  background: none;
+  color: #767676;
+}
+
+.mui-table-view-cell.mui-active {
+  background-color: #fff;
+}
+
+.mui-table-view-cell.mui-active .mui-navigate-right {
+  color: #29cccc !important;
+}
+
+.mui-table-view-cell.mui-active .mui-navigate-right:after, .mui-table-view-cell.mui-active .mui-push-left:after, .mui-table-view-cell.mui-active .mui-push-right:after {
+  color: #29cccc;
+}
+
+.main {
+  position: relative;
+}
+
+.main .main-left {
+  width: 100px;
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+}
+
+.main .main-left .mui-table-view {
+  background-color: none;
+  padding: 0;
+}
+
+.main .main-left .mui-table-view .mui-table-view-cell {
+  height: 100%;
+  padding: 0;
+}
+
+.main .main-left .mui-table-view .mui-table-view-cell .mui-navigate-right {
+  width: 100%;
+  height: 48px;
+  color: #767676;
+  line-height: 1;
+  padding: 16px 9px;
+}
+
+.main .main-left .mui-table-view .mui-table-view-cell .mui-collapse-content {
+  padding: 0;
+  height: auto;
+  width: 100px;
+}
+
+.main .main-left .mui-table-view .mui-table-view-cell .mui-collapse-content p {
+  height: 14px;
+}
+
+.main .main-left .mui-table-view .mui-table-view-cell .mui-collapse-content .color {
+  color: #484848 !important;
+}
+
+.main .main-left .mui-table-view .mui-table-view-cell .mui-collapse-content p::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 84px;
+  margin: 0 auto;
+  background: #f5f5f5;
+}
+
+.main .main-left .mui-table-view .mui-table-view-cell .mui-collapse-content .line-all {
+  width: 100%;
+  height: 1px;
+  background: #f5f5f5;
+}
+
+.main .main-right {
+  width: 100%;
+  position: absolute;
+  right: 0 !important;
+  top: 0;
+  left: 100px;
+}
+
+.main .main-right .main-right-content .company-list {
+  width: 100%;
+}
+
+.main .main-right .main-right-content .company-list .company-items {
+  margin-top: 4px;
+  width: 9.57333rem/pxrem;
+  padding: 16px;
+  display: flex;
+  background: #fff;
+  flex-flow: column;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-items-top {
+  display: flex;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-items-top .com-item-info {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-items-top .com-item-info > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-items-top .com-item-info > div > span {
+  font-size: 12px;
+  line-height: 1;
+  display: flex;
+  color: #767676;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-items-top .com-item-info > div > span > span {
+  color: #484848;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-items-top .com-item-info > div > span .star-content {
+  width: 76px;
+  height: 12px;
+  display: flex;
+  padding-left: 8px;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-items-top .com-item-info > div > span .star-content i {
+  width: 76px;
+  height: 12px;
+  background: url(../images/hot-star.png) no-repeat 0 center;
+  background-size: contain;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-items-top .com-item-info P {
+  font-size: 16px;
+  color: #484848;
+  margin: 0;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-items-top .com-item-info > span {
+  font-size: 12px;
+  line-height: 1;
+  color: #767676;
+  margin-top: 12px;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-items-top .com-item-info > span span {
+  color: #484848;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-item-bottom {
+  display: flex;
+  margin-top: 16px;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-item-bottom > div {
+  width: 68px;
+  height: 20px;
+  line-height: 18px;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-item-bottom > div:nth-child(2) {
+  margin: 0 16px;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-item-bottom > div:nth-child(1) {
+  margin-left: 0;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-item-bottom .zhishi {
+  border: 1px solid #29cccc;
+  color: #29cccc;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-item-bottom .zixun {
+  border: 1px solid #50cafa;
+  color: #50cafa;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-item-bottom .falv {
+  border: 1px solid #fa5050;
+  color: #fa5050;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-item-bottom .rencai {
+  color: #fadb50;
+  border: 1px solid #fadb50;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-item-bottom .jinrong {
+  color: #fa8950;
+  border: 1px solid #fa8950;
+}
+
+.main .main-right .main-right-content .company-list .company-items .com-item-bottom .shuwu {
+  color: #159957;
+  border: 1px solid #159957;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateZ(0);
+  box-sizing: border-box;
+  z-index: 666;
+  border-top: 1px solid #ededed;
+  display: flex;
+}
+
+.footer a {
+  width: 20%;
+  display: flex;
+  height: 50px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
+}
+
+.footer a img {
+  width: auto;
+  margin-top: 6px;
+  height: 22px;
+}
+
+.footer a p {
+  font-size: 10px;
+  margin-bottom: 0;
+  line-height: 1;
+  margin-top: 4px;
+  color: #484848;
+}
+
+.footer a .color {
+  color: #29cccc;
+}

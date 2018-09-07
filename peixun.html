@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>政知社</title>
+        <link rel="stylesheet" href="sass/swiper3.08.min.css">
+		<link rel="stylesheet" href="sass/reset.css">
+		<link href="sass/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="sass/peixun.css">
+	</head>
+	<body>
+	    <header class="mui-bar mui-bar-nav bgc">
+		    <a class="mui-icon mui-icon-left-nav mui-pull-left" href="index.html"></a>
+            <div class="mui-icon mui-pull-right search-btn"></div>
+            <div class="mui-icon mui-pull-right quxiao">取消</div>
+            <h1 class="mui-title">企业培训</h1>
+            <input type="text" placeholder="搜索企业培训" class="nav-inp" />
+	    </header>
+        <div class="class-lists">
+            <div></div>
+            <a class="class-list" href="#">
+                <img src="images/class-icon.png" alt="">
+                <div class="class-list-info">
+                    <p>积极心态与正能量团队积极心态与正能量团队</p>
+                    <div class="jiage">
+                        <span>999</span>
+                        <button>立即培训</button>
+                    </div>
+                </div>
+            </a>
+            <a class="class-list" href="#">
+                <img src="images/class-icon.png" alt="">
+                <div class="class-list-info">
+                    <p>积极心态与正能量团队积极心态与正能量团队</p>
+                    <div class="jiage">
+                        <span>999</span>
+                        <button>立即培训</button>
+                    </div>
+                </div>
+            </a>
+            <a class="class-list" href="#">
+                <img src="images/class-icon.png" alt="">
+                <div class="class-list-info">
+                    <p>积极心态与正能量团队积极心态与正能量团队</p>
+                    <div class="jiage">
+                        <span>999</span>
+                        <button>立即培训</button>
+                    </div>
+                </div>
+            </a>
+            <a class="class-list" href="#">
+                <img src="images/class-icon.png" alt="">
+                <div class="class-list-info">
+                    <p>积极心态与正能量团队积极心态与正能量团队</p>
+                    <div class="jiage">
+                        <span>999</span>
+                        <button>立即培训</button>
+                    </div>
+                </div>
+            </a>
+            <a class="class-list" href="#">
+                <img src="images/class-icon.png" alt="">
+                <div class="class-list-info">
+                    <p>积极心态与正能量团队积极心态与正能量团队</p>
+                    <div class="jiage">
+                        <span>999</span>
+                        <button>立即培训</button>
+                    </div>
+                </div>
+            </a>
+        </div>    
+        <div class="jingxuan">
+            <p class="title"><i></i>精选专场</p>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">职场课程体系</div>
+                    <div class="swiper-slide slide2">互联网课程体系</div>
+                    <div class="swiper-slide slide3">设计课程体系</div>
+                </div>
+            </div>
+        </div>   
+		<script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/swiper3.0.8.min.js"></script>
+        <script>
+        $(function(){
+            $('.search-btn').click(function(){
+                $(this).toggle();
+                $('.quxiao').toggle();
+                $('.mui-title').toggle();
+                $('.nav-inp').toggle();
+            });
+            $('.quxiao').click(function(){
+                $(this).toggle();
+                $('.search-btn').toggle();
+                $('.mui-title').toggle();
+                $('.nav-inp').toggle();
+            })
+        });
+        var swiper = new Swiper('.swiper-container',{
+            slidesPerView:'auto',
+            spaceBetween:16
+        })
+
+        </script>
+	</body>
+</html>
