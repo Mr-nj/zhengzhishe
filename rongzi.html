@@ -250,6 +250,9 @@
         $(function(){
             $('.mui-scroll-wrapper').css('height',height+'px');
             $('.smak').css('height',height+'px');
+            $('.jinrongjigou-nav span').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+            })    
         });
         mui('.mui-scroll-wrapper').scroll({
             deceleration: 0.001, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006

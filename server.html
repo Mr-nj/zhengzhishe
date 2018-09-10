@@ -17,10 +17,10 @@
 <div class="main">
     <div class="main-left mui-scroll-wrapper">
         <div class="main-left-content mui-scroll">
-            <ul class="mui-table-view">
-                <li class="mui-table-view-cell mui-collapse">
-                    <a class="mui-navigate-right" href="#">咨询公司</a>
-                    <div class="mui-collapse-content">
+            <ul class="table-view">
+                <li class="table-view-content">
+                    <a class="navigate-right" href="javascript:;">咨询公司<span class="mui-icon mui-icon-arrowdown"></span></a>
+                    <div class="collapse-content">
                         <div class="line-all"></div>
                         <p class="color all">全部</p>
                         <p>公司注册</p>
@@ -29,27 +29,27 @@
                         <p>创业孵化</p>
                     </div>
                 </li>
-                <li class="mui-table-view-cell mui-collapse">
-                    <a class="mui-navigate-right" href="#">法律服务</a>
-                    <div class="mui-collapse-content">
+                <li class="table-view-content">
+                    <a class="navigate-right" href="#">法律服务<span class="mui-icon mui-icon-arrowdown"></span></a>
+                    <div class="collapse-content">
                         <div class="line-all"></div>
                         <p class="color all">全部</p>
                         <p>法律服务</p>
                         <p>法律顾问</p>
                     </div>
                 </li>
-                <li class="mui-table-view-cell mui-collapse">
-                    <a class="mui-navigate-right" href="#">税务服务</a>
-                    <div class="mui-collapse-content">
+                <li class="table-view-content">
+                    <a class="navigate-right" href="#">税务服务<span class="mui-icon mui-icon-arrowdown"></span></a>
+                    <div class="collapse-content">
                         <div class="line-all"></div>
                         <p class="color all">全部</p>
                         <p>财务代账</p>
                         <p>财务报税</p>
                     </div>
                 </li>
-                <li class="mui-table-view-cell mui-collapse">
-                    <a class="mui-navigate-right" href="#">金融服务</a>
-                    <div class="mui-collapse-content">
+                <li class="table-view-content">
+                    <a class="navigate-right" href="#">金融服务<span class="mui-icon mui-icon-arrowdown"></span></a>
+                    <div class="collapse-content">
                         <div class="line-all"></div>
                         <p class="color all">全部</p>
                         <p>金融贷款</p>
@@ -57,9 +57,9 @@
                         <p>企业融资</p>
                     </div>
                 </li>
-                <li class="mui-table-view-cell mui-collapse">
-                    <a class="mui-navigate-right" href="#">人才服务</a>
-                    <div class="mui-collapse-content">
+                <li class="table-view-content">
+                    <a class="navigate-right" href="#">人才服务<span class="mui-icon mui-icon-arrowdown"></span></a>
+                    <div class="collapse-content">
                         <div class="line-all"></div>
                         <p class="color all">全部</p>
                         <p>人才招聘</p>
@@ -67,9 +67,9 @@
                         <p>定向培养</p>
                     </div>
                 </li>
-                <li class="mui-table-view-cell mui-collapse">
-                    <a class="mui-navigate-right" href="#">知识产权</a>
-                    <div class="mui-collapse-content">
+                <li class="table-view-content">
+                    <a class="navigate-right" href="#">知识产权<span class="mui-icon mui-icon-arrowdown"></span></a>
+                    <div class="collapse-content">
                         <div class="line-all"></div>
                         <p class="color all">全部</p>
                         <p>专利申请</p>
@@ -242,12 +242,29 @@
             $('.mui-collapse-content p').click(function(){
                 $(this).addClass('color').siblings().removeClass('color');
             })
-            
+            //左侧边导航点击效果
+            $('.navigate-right').click(function(){
+                $(this).parent().toggleClass('active').siblings().removeClass('active');
+                if($(this).parent().hasClass('index')){
+                }else{
+                    $('.all').addClass('color').siblings().removeClass('color');
+                }
+                $(this).parent().addClass('index').siblings().removeClass('index');
+            });
+            $('.collapse-content p').click(function(){
+                $(this).addClass('color').siblings().removeClass('color');
+            })
         });
+
+
+        //实例区域滑动
         mui('.mui-scroll-wrapper').scroll({
             deceleration: 0.001, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
             indicators: false,
         });
+        mui('.mui-table-view-cell').on('tap','.mui-navigate-right',function(){
+            
+        })
     </script>
 </body>
 </html>
